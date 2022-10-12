@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predavanje 4</title>
+</head>
+<body>
+    <!-- Multimedija - grafika -->
+<img src="https://thumbs.dreamstime.com/b/happy-student-thumbs-up-classroom-looking-you-classmates-background-96531919.jpg" width="300">
+<img src="./man.png" width="300">
+
+
+
+
+
+
+
+
+   <!--Forme - nastavak  -->
+   <form action="#" method="get" oninput='bonus.value=parseInt(parseInt(placa.value)*0.2).toString() + "kn"'>
+    <label for="post">Unesite sadrzaj svog posta</label>
+    <br>
+    <textarea id="post" name="post" rows="10" cols="60">Upisite svoj post</textarea>
+    <fieldset>
+    <legend>Personalia:</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+  <label for="placa">Odaberite iznos place</label>
+  <input type="range" value="500000" id="placa" name="placa" min="100000" max="1000000"> <br>
+  <label for="bonus">Predvideni bonus</label>
+  <output name="bonus" for="placa">100000 </output>
+   </form>
+</body>
+</html>

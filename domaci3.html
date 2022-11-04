@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domaci3</title>
+</head>
+<body>
+    <form action="/action_page.php"  oninput='x.value=parseInt(a.value)*parseInt(b.value).toString() + "dollars"'>
+    <fieldset>
+     <legend><h3>Personal information</h3></legend><br>
+     <label for="name" id="name">Your Name:</label>
+     <input type="text" name="name"> <br>
+     <br>
+     <label for="lastName" id="lastName">Your Last Name:</label>
+     <input type="text" name="lastName">
+     </fieldset>
+     <br>
+     <h3>Add your book in pdf file</h3>
+     <input type="file">
+     <h3>Life stage your book was written for?</h3>
+       <input list="age" name="age">
+  <datalist id="age">
+    <option value="Toddlers"></option>
+    <option value="Children's book">
+        <option value="Teens"></option>
+    <option value="Young adults">
+    <option value="Adults">
+  </datalist><br>
+  <br>
+  <label for="publish"><h3>What type of publishing you choose:</h3></label>
+  <select name="publish" id="publish">
+    <optgroup label="Print">
+      <option value="Paperback">Paperback</option>
+      <option value="Hardcover">Hardcover</option>
+    </optgroup>
+    <optgroup label="Digital">
+      <option value="Kindle">Kindle</option>
+      <option value="e-book">E-book</option>
+    </optgroup>
+  </select>
+<h3>Write your book cover text here:</h3>
+    <textarea name="your-story" rows="10" cols="30">
+    </textarea>
+    <br>
+    <br>
+   <h3>Number of pages:</h3>
+  0
+  <input type="range"  id="a" name="a" value="50">
+  1000*
+  <input type="number" id="b" name="b" value="50">
+  cent =
+  <output name="x" for="a b"></output>
+  <br><br>
+  
+     <button type="button" onclick="alert('Your submition was sent!')">Send it!</button> 
+</form>
+</body>
+</html>

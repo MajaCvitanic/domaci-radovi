@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domaci2</title>
+  </head>
+  <body>
+    <h2>HTML Forms</h2>
+    <!-- Personal information -->
+    <form action="/action_page.php">
+      <label for="fname">First Name:</label><br />
+      <input type="text" id="fname" name="fname" value="Name" required /><br />
+      <label for="mname">Middle Name:</label><br />
+      <input type="text" id="mname" name="mname" value="Middle Name" /><br />
+      <label for="lname">Last Name:</label><br />
+      <input
+        type="text"
+        id="lname"
+        name="lname"
+        value="Last Name"
+        required
+      /><br />
+      <label for="dateBirth">Date of birth:</label><br />
+      <input
+        type="date"
+        id="dateBirth"
+        name="dateBirth"
+        value=""
+        required
+      /><br />
+      <br />
+      <label for="avatar">Choose a profile picture:</label><br />
+
+      <input
+        type="file"
+        id="avatar"
+        name="avatar"
+        accept="image/png, image/jpeg"
+      />
+      <br />
+      <br />
+      <!-- Information general -->
+      <br />
+      <p>How did you hear about us?</p>
+      <input
+        type="radio"
+        id="newspapers"
+        name="fav_language"
+        value="newspapers"
+      />
+      <label for="html">Newspapers</label><br />
+      <input
+        type="radio"
+        id="socialNetworks"
+        name="fav_language"
+        value="socialNetworks"
+      />
+      <label for="socialNetworks">Social Networks</label><br />
+
+      <input
+        type="radio"
+        id="advertisement"
+        name="fav_language"
+        value="advertisement"
+      />
+      <label for="advertisement">Advertisement</label><br />
+      <br />
+
+      <label for="e-mail">Enter your e-mail:</label><br />
+
+      <input type="e-mail" id="e-mail" required />
+      <br />
+      <label for="phone-number">Enter your phone number:</label> <br />
+
+      <input
+        type="tel"
+        id="phone-number"
+        pattern="+385 xx xxx xx xx"
+        required
+      /><br />
+      <br />
+
+      <fieldset>
+        <legend>How would you like to be contacted?</legend>
+
+        <input
+          type="checkbox"
+          id="phone"
+          name="contacted"
+          value="phone"
+          checked
+        />
+        <label for="phone">Phone</label>
+        <br />
+        <input type="checkbox" id="email" name="contacted" value="email" />
+        <label for="email">E-mail</label>
+      </fieldset>
+      <br />
+      <!-- Profile credentials -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" /><br />
+      <br />
+      <label for="pass">Password:</label>
+      <input type="password" id="pass" name="password" required /><br />
+      <br />
+    </form>
+    <!-- Work information -->
+    <form action="./ispunjenobrazac.html" method="get">
+      <table border="2px solid black;">
+        <h3>Please fill the spreadsheet below with availble working hours</h3>
+        <th></th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+
+        <tr>
+          <td>Morning</td>
+          <td><input type="text" name="monday_morning"placeholder="eg. 10-12" /></td>
+          <td><input type="text" name="Tuesday_morning"/></td>
+          <td><input type="text" name="Wednesday_morning"/></td>
+          <td><input type="text" name="Thursday_morning"/></td>
+          <td><input type="text" name="Friday_morning"/></td>
+        </tr>
+        <tr>
+          <td>Afternoon</td>
+          <td><input type="text" name="monday_Afternoon"placeholder="eg. 13-16" /></td>
+          <td><input type="text" name="Tuesday_Afternoon"/></td>
+          <td><input type="text" name="Wednesday_Afternoon"/></td>
+          <td><input type="text" name="Thursday_Afternoon"/></td>
+          <td><input type="text" name="Friday_Afternoon"/></td>
+        </tr>
+      </table>
+
+      <br />
+      <input type="submit" value="Create profile" />
+    </form>
+  </body>
+</html>
